@@ -1,0 +1,63 @@
+// mixin for content
+@mixin for-phone-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}
+
+// mixin for font only
+@mixin font-phone-only {
+  @media (max-width: 28.75em) {
+    html {
+      font-size: 55%;
+    }
+  }
+}
+
+@mixin font-tablet-portrait-up {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin font-tablet-landscape-up {
+  @media (max-width: 61.25em) {
+    html {
+      font-size: 58%;
+    }
+  }
+}
+
+@mixin font-desktop-up {
+  @media (max-width: 75em) {
+    html {
+      font-size: 60%;
+    }
+  }
+}
+
+@mixin font-big-desktop-up {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}

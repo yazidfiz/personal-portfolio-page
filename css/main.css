@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #212121;
+}
+
+h1 {
+  font-family: "Castoro", serif;
+  font-size: 5rem;
+  letter-spacing: 2px;
+  color: #212121;
+}
+
+h2 {
+  font-size: 3rem;
+  padding-bottom: 0.5em;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+br {
+  display: block;
+  margin-top: -10px;
+  content: "";
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+#navbar {
+  width: 100%;
+  position: fixed;
+  background-color: transparent;
+}
+
+#navbar .navbar-container {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#navbar .navbar-container .nav-list {
+  display: flex;
+  margin-top: 2em;
+}
+
+#navbar .navbar-container .nav-list li {
+  list-style: none;
+}
+
+#navbar .navbar-container .nav-list li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  font-size: 1.6rem;
+  padding: 0.7em 1.7em;
+  color: black;
+}
+
+@media screen and (max-width: 576px) {
+  #navbar .nav-list li {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #navbar #navbar .navbar-container {
+    width: 100% !important;
+  }
+  #navbar #navbar .navbar-container .nav-list {
+    margin-top: 1em;
+  }
+  #navbar #navbar .navbar-container .nav-list li a {
+    padding: 0 !important;
+  }
+}
+
+#welcome-section {
+  background-image: url(../img/4853433.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  overflow: hidden;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+}
+
+#welcome-section .banner-desc {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 150px;
+}
+
+#welcome-section .banner-desc .title {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 70%;
+  padding-right: 12em;
+}
+
+#welcome-section .banner-desc .title span {
+  color: #11999e;
+}
+
+#welcome-section .banner-desc .title p {
+  font-size: 2rem;
+  color: #212121;
+}
+
+#welcome-section .banner-desc .title .desc-me {
+  font-size: 1.6rem;
+  line-height: 2;
+  color: #212121;
+}
+
+#welcome-section .banner-desc .title .freepic-att a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #323232;
+}
+
+#welcome-section .banner-desc .title .btn {
+  background-color: #11999e;
+  color: white;
+  font-weight: 600;
+  padding: 1rem;
+  width: fit-content;
+  border-radius: 5px;
+  margin-top: 2rem;
+  border: none;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+
+#welcome-section .banner-desc .title .btn a {
+  text-decoration: none;
+  color: white;
+}
+
+#welcome-section .banner-desc .image img {
+  max-width: 300px;
+}
+
+@media screen and (max-width: 1200px) {
+  #welcome-section .banner-desc {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #welcome-section .banner-desc {
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 90%;
+    margin-top: 100px;
+  }
+  #welcome-section .banner-desc .title {
+    padding-right: 0;
+    text-align: center;
+  }
+  #welcome-section .banner-desc .image {
+    max-width: 250px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #welcome-section .banner-desc {
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+    margin-top: 80px;
+  }
+  #welcome-section .banner-desc .title {
+    margin-top: 3em;
+    padding-right: 0;
+    text-align: center;
+  }
+  #welcome-section .banner-desc .image {
+    max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #welcome-section .banner-desc {
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+    margin-top: 80px;
+    padding: 0 2em;
+  }
+  #welcome-section .banner-desc .title {
+    margin-top: 3em;
+    padding-right: 0;
+    text-align: center;
+  }
+  #welcome-section .banner-desc .title h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-family: "Castoro", serif;
+    letter-spacing: 2px;
+    color: #212121;
+  }
+  #welcome-section .banner-desc .title span {
+    color: #11999e;
+  }
+  #welcome-section .banner-desc .title .hey {
+    display: none;
+  }
+  #welcome-section .banner-desc .title .desc-me {
+    font-size: 1.6rem;
+    line-height: 2;
+    text-align: justify;
+    color: #212121;
+  }
+  #welcome-section .banner-desc .title .freepic-att a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #323232;
+  }
+  #welcome-section .banner-desc .title .btn {
+    background-color: #11999e;
+    color: white;
+    font-weight: 600;
+    padding: 1rem;
+    width: fit-content;
+    border-radius: 5px;
+    margin-top: 2rem;
+    border: none;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+  }
+  #welcome-section .banner-desc .title .btn a {
+    text-decoration: none;
+    color: white;
+  }
+  #welcome-section .banner-desc .image {
+    max-width: 200px;
+  }
+}
+
+.container .services-section,
+.container .contact-section {
+  background-color: #ebe9ea;
+}
+
+.container section {
+  width: 100%;
+  padding: 4rem 0;
+}
+
+.container section .row-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container section .row-grid-lg {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 30em);
+  justify-content: center;
+  justify-items: center;
+  gap: 2em 2em;
+}
+
+.container section .row-grid-lg .col p {
+  text-align: justify;
+}
+
+.container section .row-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 20em);
+  justify-content: center;
+  justify-items: center;
+  gap: 2em 2em;
+  margin-bottom: 2em;
+}
+
+.container section .row-grid .col .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.container section .row-grid .col .card .img-serv {
+  max-width: 50px;
+  padding: 2em 0 0;
+}
+
+.container section .row-grid .col .card h3 {
+  padding: 0.5em;
+}
+
+.container section .row-grid .col .card p {
+  line-height: 1.5;
+  text-align: justify;
+  padding: 0 2em 2em;
+}
+
+.container section .row-grid .col .card .project {
+  display: block;
+  background-color: #119993;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.container section .row-grid .col .card .project p {
+  line-height: 1.5;
+  text-align: center;
+  padding: 1em;
+}
+
+.container-contact .contact-section .contact-section-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-contact .contact-section .contact-section-header .contact-section-header {
+  text-align: center;
+}
+
+.container-contact .contact-section .contact-links ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 10em);
+  justify-content: center;
+  margin-top: 1em;
+  row-gap: 1em;
+}
+
+.container-contact .contact-section .contact-links ul li {
+  font-size: 1.8rem;
+}
+
+.container-contact .contact-section .contact-links ul li a {
+  color: #5f5f5f;
+  transition: 0.3s ease;
+}
+
+.container-contact .contact-section .contact-links ul li a:hover {
+  color: #1b1b1b;
+  transform: scaleY(2);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #1b1b1b;
+  color: white;
+  padding: 1em;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,41 @@
+.container-contact {
+  .contact-section {
+    .contact-section-header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .contact-section-header {
+        text-align: center;
+      }
+    }
+    .contact-links {
+      ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 10em);
+        justify-content: center;
+        margin-top: 1em;
+        row-gap: 1em;
+        li {
+          font-size: 1.8rem;
+          a {
+            color: rgb(95, 95, 95);
+            transition: 0.3s ease;
+            &:hover {
+              color: rgb(27, 27, 27);
+              transform: scaleY(2);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(27, 27, 27);
+  color: white;
+  padding: 1em;
+}
