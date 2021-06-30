@@ -1,3 +1,4 @@
+/* start reset  */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&display=swap");
 * {
@@ -56,6 +57,8 @@ img {
   width: 100%;
 }
 
+/* end reset  */
+/* start navbar */
 #navbar {
   width: 100%;
   position: fixed;
@@ -106,6 +109,8 @@ img {
   }
 }
 
+/* end navbar */
+/* start welcome */
 #welcome-section {
   background-image: url(../img/4853433.jpg);
   background-position: center;
@@ -272,6 +277,8 @@ img {
   }
 }
 
+/* end welcome */
+/* start section */
 .container .services-section,
 .container .contact-section {
   background-color: #ebe9ea;
@@ -348,6 +355,8 @@ img {
   padding: 1em;
 }
 
+/* end section */
+/* start footer */
 .container-contact .contact-section .contact-section-header {
   display: flex;
   flex-direction: column;
@@ -388,4 +397,6 @@ footer {
   color: white;
   padding: 1em;
 }
+
+/* end footer */
 /*# sourceMappingURL=main.css.map */
